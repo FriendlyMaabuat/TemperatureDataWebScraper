@@ -16,5 +16,5 @@ temperature = [item[0] for item in temperature]
 
 st.title("Average World Temperature")
 st.subheader("Below is a line graph to visualize the data")
-figure = px.line(x=date, y=temperature, labels={"x": "Date", "y": "Temperature (C)"})
+figure = px.line(x=date, y=temperature, labels={"x": "Date", "y": "Temperature (C)"}, width=1200, height=600)
 st.plotly_chart(figure)
